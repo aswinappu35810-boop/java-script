@@ -8,7 +8,7 @@ for (i=0 ; i<length; i++)
     numbers.push(number)
 }
 
-console.log(numbers)
+console.log("added number: "+numbers)
 
 for(i=0; i<numbers.length; i++){
     if(numbers[i]%2 == 0)
