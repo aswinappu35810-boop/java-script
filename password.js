@@ -1,10 +1,13 @@
 let pin = parseInt(prompt("Enter the 4-digit secret codes: "))
 let w = pin % 10
-pin = parseInt(pin/10)
-let x = pin % 10
-pin = parseInt(pin/10)
+pin = pin-w
+pin = pin/10
+let x =pin % 10
+pin = pin - x
+pin = pin / 10
 let y = pin % 10
-pin = parseInt(pin/10)
+pin = pin - y
+pin = pin / 10
 let z = pin % 10
 let sum=(w+y+x+z)
 let dev = sum % 7
