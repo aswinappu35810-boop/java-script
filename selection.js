@@ -6,10 +6,10 @@ let temp = 0
 for(i=0; i<a.length; i++)
 {
 x = a[i]
-// position = i
-for(j=i; j<a.length; j++)
+position = i
+for(j=i+1 ; j<a.length; j++)
 {
-    if(x>=a[j])
+    if(x>a[j])
     {
         x = a[j]
         position = j
