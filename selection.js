@@ -1,4 +1,5 @@
 let a= [29,10,14,37,13]
+console.log("before array: "+a)
 let small = 0
 let position = 0
 let x = 0
@@ -24,4 +25,4 @@ a[position] = temp
 }
 
 
-console.log(a)
+console.log("after array: "+a)
