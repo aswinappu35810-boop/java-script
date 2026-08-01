@@ -1,29 +1,25 @@
 let a= [29,10,14,37,13]
-let found = false
 let small = 0
+let position = 0
 let x = 0
+let temp = 0
 for(i=0; i<a.length; i++)
 {
-   if(!found)
+x = a[i]
+// position = i
+for(j=i; j<a.length; j++)
+{
+    if(x>=a[j])
     {
-        small = a[i]
-        found = true
-    } 
-    // else if(a[i]<small)
-    // {
-    //     small = a[i]
-    // }
-    for(j=0; j<a.length; j++)
-    {
-       if(a[j]<small)
-       {
-        
-        small = a[j]
-        a[j]=a[i]
-        a[i]=small
-        found = false
-       }
+        x = a[j]
+        position = j
     }
+
+}
+temp = a[i]
+a[i] = a[position]
+a[position] = temp
+
 
 }
 
