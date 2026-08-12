@@ -10,5 +10,5 @@ for(i=0;i<a.length; i++)
     }
 
 }
-a.length = a.length-count
+a.length = count
 console.log(a)
