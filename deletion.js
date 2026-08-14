@@ -10,9 +10,5 @@ for(i=0;i<a.length; i++)
     }
 
 }
-<<<<<<< HEAD
 a.length = count
-=======
-a.length =count
->>>>>>> Move-All-Zeros-to-the-End
 console.log(a)
