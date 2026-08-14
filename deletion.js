@@ -5,10 +5,14 @@ for(i=0;i<a.length; i++)
 {
     if(a[i]!=element)
     {
-        count++
         a[count]=a[i]
+        count++
     }
 
 }
+<<<<<<< HEAD
 a.length = count
+=======
+a.length =count
+>>>>>>> Move-All-Zeros-to-the-End
 console.log(a)
