@@ -5,10 +5,10 @@ for(i=0;i<a.length; i++)
 {
     if(a[i]!=element)
     {
-        count++
         a[count]=a[i]
+        count++
     }
 
 }
-a.length = a.length-count
+a.length =count
 console.log(a)
