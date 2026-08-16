@@ -1,43 +1,19 @@
-let a = [9,7,5,3,1]
-let odd = 0
-let found = false
+let arr = [-5, -2, -9, -3, 4];
 
-let bigg = 1
-for(i=0; i<a.length; i++)
-{
+let largest;
+let found = false;
 
-    if(a[i]%2==0)
-    {
-        // console.log("no odd number is present");
-        found = false
-        // console.log(a[i])
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+        if (!found || arr[i] > largest) {
+            largest = arr[i];
+            found = true;
+        }
     }
-    else
-    {
-        odd = a[i]
-        found = true
-        // console.log(odd)
-    }
-
-    if(bigg<odd)
-    {
-        bigg = odd
-    }
-    // else if(odd<bigg)
-    // {
-    //     bigg = odd
-    // }
 }
-if(!found)
-{
- console.log("no odd number is present");   
-}
-// if(bigg<0)
-// {
-//     console.log("enter the biggest odd number: "+bigg) 
 
-// }
-else
-{
-    console.log("enter the biggest odd number: "+bigg) 
+if (found) {
+    console.log(largest);
+} else {
+    console.log("No odd number");
 }
