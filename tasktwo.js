@@ -1,4 +1,4 @@
-let a =  [1, 2, 3, 4, 5]
+let a =  [1,2,2,4,3,5,1]
 let x = 0
 for(i=1;i<a.length;i++)
 {

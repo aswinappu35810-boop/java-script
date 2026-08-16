@@ -1,4 +1,4 @@
-a = [1,5,0,5,1]
+let a = [5,4,3,2,1]
 let iwall = a[0]
 let unitwater = 0
 let totalwater = 0
